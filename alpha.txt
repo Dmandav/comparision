@@ -1,0 +1,59 @@
+On Node Controllability and Observability in Complex Dynamical Networks
+Abstract:
+We analyze well the delicate nonetheless crucial differences between the controllability and observability properties of the triplet (A, B, C) within the 2 cases that this is viewed as a network of ever-changing nodes or as one complex system. we tend to show that investigation the controllability and observability properties of every single node when the network isn't utterly manageable and/or observable, needs the event of novel tools leading, ultimately, to a network decomposition that's totally different from the state-space decomposition.
+Introduction:
+A common trait among these studies is that of revisiting the basics of resurgent systems theory to permit addressing giant dynamical networks. amazingly, a basic tool that has been unnoted in these studies is that the Kalman decomposition. By unveiling the portion of the state area that's created controllable by the system inputs which is formed discernible through the obtainable measurements, this tool offers the management designer a rather clear plan of the constraints to that the management action is subject.
+This following question naturally arises:
+*what insight can the Kalman decomposition provide on the controllability and observability of a large dynamical network?
+To respond to this inquiry, we should think about that, regularly, a dynamic system grows self-governingly and the need to control it emerges at a propelled phase of its development. Think for example of intensity matrices or traffic systems, which develop together with the urban communities, or countries, they serve. Since such systems are not explicitly intended to be controlled, two starter issues must be understood. The first is to build up in which hubs the control signals must be infused. In the writing this is frequently alluded to as the driver hubs (otherwise called pioneer or directing hubs) choice issue. The subsequent issue is, clearly, the choice of the hubs that must be sensorized to permit perception of the condition of the hubs focused by the control activity and shockingly it has pulled in less consideration from the scientists. An essential condition to comprehend both these issues is the capacity to (a) decide the set of hubs that can be controlled given a lot of drivers, and (b) decide the arrangement of hubs whose state can be watched given a lot of sensorized hubs. The principal condition has been fulfilled.
+	In this paper, we will initially clear up the obvious logical inconsistency emerging from condition and later, expanding the equivalent thinking, we will give the devices to satisfy condition (b). In doing as such, we will arrive at the striking resolution that satisfying conditions (a) and (b) doesn't decrease to finding the Kalman decay of the framework state space. The explanation is inconspicuous be that as it may, basic: after the Kalman approach, the controllability and discernibleness properties are examined through an adhoc change of the framework state portrayal. In the new premise the controllable and detectable subsystems become unmistakable however the physical significance of the first framework state is lost. When managing direct systems, rather, the procedure is by one way or another switched, as one must stay with the premise that partners a hub to every one of its components, and afterward express the controllable and recognizable sub networks through the components of such premise. Thus, this compels the changes that can be utilized to play out the state space disintegration.
+Preliminaries:
+We consider the linear ordinary differential equation
+x ̇(t)=Ax(t)+Bu(t)    (1)
+y(t)=Cx(t)
+Where the vectors x∈R^N,u∈R^M,and y∈R^P.
+Interpretation 1: Eq. (1) is a dynamical network. The genuine network A characterizes the framework elements, the grid B speaks to the impact of the M contributions to the vector u on the state factors, also, the network C characterizes which P straight mixes of the state factors are estimated and, in this manner, comprise the yield vector y. 
+Interpretation 2: Eq. (1) is a dynamical system. The genuine grid A=〖{a_ij}〗_(i,j=1)^N portrays the hub natural elements and the system network. The askew components of A characterize the hub inborn elements, while if the ij-th component of A, i≠j, is not the same as zero then there is an edge associating node v_j to node v_i.
+Regardless of the interpretation, the controllability matrix of the triplet (A, B, C) in (1) is
+K=[B   AB 〖  A〗_2 B   ∙∙∙∙  A_(n-1) B]    (2)
+And the observability matrix is 
+O=〖[C^T   A^T C^T    〖〖A^T〗^2 C〗^T  ....  〖〖A^T〗^(n-1) C〗^T]〗^T    (3)
+Here we have 3 definitions, Definition 1 describes weight by using the below equations
+W_ji (K):=∏_((rl,rl+1)ϵ∏_ji▒〖(k)〗)▒a_(rl,rl+1) 
+Definition 2 describes the controllable subnetwork by using graph G_c=〖(V〗_(c,) E_c), is the subnetwork with the maximal.
+Definition 3 describes the observable subnetwork, described by graph G_o=〖(V〗_(o,) E_o), is the maximal set of nodes whose state can be reconstructed from knowledge of the control signals and the measured node states y.
+
+
+Network Controllability:
+Network Controllability is concerned about the structural controllability of a network. Controllability describes our ability to guide a dynamical system from any initial state to any desired final state in finite time, with a suitable choice of inputs. This definition agrees well with our intuitive notion of control. The controllability of general directed and weighted complex networks has recently been the subject of intense study by several groups in wide variety of networks, worldwide.
+[■(I_p&O_(p×q-p)@O_(q-p×p)&T_(q-p×q-p)^22@O_(N-q×p)&T_(N-q×q-p)^32 )]
+T=[■(I&0&0@0&T^22&0@0&T^23&T^33 )]
+T^(-1)=[■(I&0&0@0&〖(T^22)〗^(-1)&0@0&*&〖(T^33)〗^(-1) )]
+Network Observability:
+The observability of a given system can be accurately assessed by symbolically computing the complexity of the determinant of the observability matrix and quantified by symbolic observability coefficients. In this work, we extend the symbolic observability, previously developed for dynamical systems, to networks made of coupled d-dimensional node dynamics.
+Decomposition of the network node:
+Decomposition of the network nodes is the process by which complex network nodes are broken down into simpler network nodes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusion:
+The subnetworks G_cand  G_o are not directly getable from the controllability and observability system matrices but they required manipulation. The labeling of the nodes of the manageable sub network can’t be drained a singular manner. Indeed, although the nodes in V_cVc are constant and adequate the rank of the controllability matrix, different nodes of constant network are reaching to be elect to become members of the set V_c. it is impossible to state that the number of nodes of the observable subnetwork coincides with the number of observable states of the space delineated by constant triplet of matrices. collaborating among an equivalent role of the Kalman decomposition for the management of dynamic systems but inherently different from it, this partition provides important information for the management of a network.
